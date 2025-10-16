@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Company Database ERD</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .mermaid {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .instructions {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .instructions h2 {
+            margin-top: 0;
+            color: #1976d2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Education Company Database - Entity Relationship Diagram</h1>
+        
+        <div class="instructions">
+            <h2>How to Generate ERD_Figure.png:</h2>
+            <ol>
+                <li>Open this HTML file in a web browser (Chrome, Firefox, Edge, etc.)</li>
+                <li>The ERD will be rendered automatically</li>
+                <li>Take a screenshot of the diagram area</li>
+                <li>Save the screenshot as <strong>ERD_Figure.png</strong></li>
+            </ol>
+            <p><strong>Alternative:</strong> Go to <a href="https://mermaid.live" target="_blank">https://mermaid.live</a>, 
+            paste the contents of <code>education_database_erd.mmd</code>, and export as PNG.</p>
+        </div>
+
+        <div class="mermaid">
+erDiagram
+    Companies ||--o{ Branches : "has"
+    Branches ||--o{ Courses : "offers"
+    Branches ||--o{ Teacher : "employs"
+    Branches ||--o{ Department : "contains"
+    Courses ||--o{ Students : "enrolls"
+    Courses ||--o{ Enrollment : "tracks"
+    Students ||--o{ Enrollment : "participates"
+
+    Companies {
+        int id PK
+        string name "NOT NULL"
+        string headquarters
+    }
+
+    Branches {
+        int id PK
+        int company_id FK
+        string location "NOT NULL"
+    }
+
+    Courses {
+        int id PK
+        int branch_id FK
+        string name "NOT NULL"
+        int duration
+    }
+
+    Students {
+        int id PK
+        int course_id FK
+        string name "NOT NULL"
+        int age
+    }
+
+    Enrollment {
+        int id PK
+        int student_id FK
+        int course_id FK
+        string enrollment_date
+    }
+
+    Logging {
+        int id PK
+        string activity "NOT NULL"
+        string timestamp "NOT NULL"
+    }
+
+    Teacher {
+        int id PK
+        int branch_id FK
+        string name "NOT NULL"
+        string subject
+    }
+
+    Department {
+        int id PK
+        int branch_id FK
+        string name "NOT NULL"
+    }
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            themeVariables: {
+                primaryColor: '#4a90e2',
+                primaryTextColor: '#fff',
+                primaryBorderColor: '#2c5aa0',
+                lineColor: '#333',
+                secondaryColor: '#a2c4e0',
+                tertiaryColor: '#f0f0f0'
+            }
+        });
+    </script>
+</body>
+</html>

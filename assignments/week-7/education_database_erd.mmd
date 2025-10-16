@@ -1,0 +1,60 @@
+erDiagram
+    Companies ||--o{ Branches : "has"
+    Branches ||--o{ Courses : "offers"
+    Branches ||--o{ Teacher : "employs"
+    Branches ||--o{ Department : "contains"
+    Courses ||--o{ Students : "enrolls"
+    Courses ||--o{ Enrollment : "tracks"
+    Students ||--o{ Enrollment : "participates"
+
+    Companies {
+        int id PK
+        string name "NOT NULL"
+        string headquarters
+    }
+
+    Branches {
+        int id PK
+        int company_id FK
+        string location "NOT NULL"
+    }
+
+    Courses {
+        int id PK
+        int branch_id FK
+        string name "NOT NULL"
+        int duration
+    }
+
+    Students {
+        int id PK
+        int course_id FK
+        string name "NOT NULL"
+        int age
+    }
+
+    Enrollment {
+        int id PK
+        int student_id FK
+        int course_id FK
+        string enrollment_date
+    }
+
+    Logging {
+        int id PK
+        string activity "NOT NULL"
+        string timestamp "NOT NULL"
+    }
+
+    Teacher {
+        int id PK
+        int branch_id FK
+        string name "NOT NULL"
+        string subject
+    }
+
+    Department {
+        int id PK
+        int branch_id FK
+        string name "NOT NULL"
+    }
