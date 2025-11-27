@@ -136,5 +136,7 @@
 		"**/.coverage*": true,
 		"**/.DS_Store": true,
 		"**/Thumbs.db": true
-	}
+	},
+	"python-envs.defaultEnvManager": "ms-python.python:system",
+	"python-envs.pythonProjects": []
 }
