@@ -1,4 +1,4 @@
-# DBMS & Practice - [Live Notes](https://sokhib.notion.site/DBMS-Practice-27e5fa6c375080f88403f639cfec4596?pvs=74)
+# DBMS & Practice - [Live Notes](https://dbms.sokhib.dev)
 
 ## 📚 Weekly Notes
 
