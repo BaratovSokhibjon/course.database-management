@@ -9,6 +9,9 @@
 - [Week 5 - More SQL](./weekly-notes/w5-sql-basics-2.md)
 - [Week 6 - Basic SQL](./weekly-notes/w6-sql-basics-1.md)
 - [Week 7 - Relational Algebra & Calculus](./weekly-notes/w7-relational-algebra.md)
+- Week 8 - Mid Terms
+- Week 9 - Lab session
+- [Week 10 - Advanced SQL](./weekly-notes/w10-advanced-sql.md)
 
 ## 🐋 YouTube Videos for this course
 
