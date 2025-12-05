@@ -1,0 +1,21 @@
+# E-Commerce Interactive Dashboard Requirements
+
+# Core dependencies
+notebook>=7.0.0
+jupyter>=1.0.0
+
+# Data manipulation
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+plotly>=5.17.0
+
+# Interactive widgets
+ipywidgets>=8.1.0
+
+# Database
+# SQLite3 is included in Python standard library
+
+# Optional: For better display in notebooks
+IPython>=8.12.0
