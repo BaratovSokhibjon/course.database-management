@@ -1,5 +1,13 @@
 # DBMS & Practice - [Live Notes](https://dbms.sokhib.dev)
 
+## Student Information
+
+- **Student Name**: Baratov Sokhibjon
+- **Student ID**: 12225259
+- **Course**: Database Management
+- **Institution**: Inha University
+- **Semester**: Fall 2025
+
 ## 📚 Weekly Notes
 
 - [Week 1 - Introduction](./weekly-notes/w1-intro.md)
@@ -12,6 +20,38 @@
 - Week 8 - Mid Terms
 - Week 9 - Lab session
 - [Week 10 - Advanced SQL](./weekly-notes/w10-advanced-sql.md)
+
+## 📂 Assignments
+
+### Week 4 - Kaggle Dataset Analysis
+
+- **File**: [assignments/week-4/kaggle.ipynb](./assignments/week-4/kaggle.ipynb)
+- Data analysis and manipulation using Kaggle datasets
+
+### Week 7 - Education Company Database
+
+- **Location**: [assignments/week-7/](./assignments/week-7/)
+- **Files**:
+  - `education_database.ipynb` - Complete database implementation
+  - `education_database_erd.mmd` - ERD diagram source
+  - `ERD_Figure.png` - Entity-Relationship Diagram visualization
+- **Features**:
+  - 8-table normalized schema (Companies, Branches, Courses, Students, Enrollment, Logging, Teacher, Department)
+  - 80 total records with proper foreign key relationships
+  - Complete ERD documentation
+  - Data visualization using Pandas
+
+## 🚀 Projects
+
+### E-Commerce Analysis
+
+- **Location**: [projects/ecommerce-analysis/](./projects/ecommerce-analysis/)
+- **Description**: Advanced SQL data analysis project with 16,500+ records
+- **Key Features**:
+  - 4-table normalized relational schema (customers, products, orders, reviews)
+  - Advanced SQL: Window Functions, CTEs, Complex JOINs, Moving Averages
+  - Database optimization with indexes and referential integrity
+- **Technologies**: Python, SQLite3, Pandas, NumPy, Faker
 
 ## 🐋 YouTube Videos for this course
 
