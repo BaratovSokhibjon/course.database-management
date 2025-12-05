@@ -5,21 +5,23 @@
 ## 🚀 Quick Start
 
 ### For Google Colab (Easiest)
-1. Upload `ecommerce_complete_dashboard.ipynb`
+
+1. Upload `ecommerce_dashboard.ipynb`
 2. Runtime → Run all
 3. Done! (20 seconds)
 
 ### For Local Jupyter
+
 ```bash
 pip install pandas numpy faker plotly ipywidgets jupyter
 jupyter nbextension enable --py widgetsnbextension
-jupyter notebook ecommerce_complete_dashboard.ipynb
+jupyter notebook ecommerce_dashboard.ipynb
 # Then: Cell → Run All
 ```
 
 ## 📁 Files
 
-- **`ecommerce_complete_dashboard.ipynb`** ⭐ Main file - Submit this!
+- **`ecommerce_dashboard.ipynb`** ⭐ Main file - Submit this!
 - **`QUICKSTART.md`** - Quick start guide
 - **`TESTING.md`** - Testing & troubleshooting
 - **`FINAL_SUMMARY.md`** - Complete summary
@@ -35,7 +37,7 @@ jupyter notebook ecommerce_complete_dashboard.ipynb
 
 ## 🎯 For Submission
 
-**Submit**: `ecommerce_complete_dashboard.ipynb`
+**Submit**: `ecommerce_dashboard.ipynb`
 
 **Why**: Single file, no dependencies, works everywhere!
 
@@ -50,15 +52,18 @@ jupyter notebook ecommerce_complete_dashboard.ipynb
 ## 🆘 Common Errors
 
 ### NameError: name 'widgets' is not defined
+
 **Fix**: Run Cell → Run All (don't skip cells!)
 
 ### ModuleNotFoundError
+
 ```bash
 pip install ipywidgets plotly faker pandas numpy
 jupyter nbextension enable --py widgetsnbextension
 ```
 
 ### Widgets not interactive
+
 ```bash
 jupyter nbextension enable --py widgetsnbextension
 ```
