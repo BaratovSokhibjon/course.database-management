@@ -1,8 +1,8 @@
-# E-Commerce Inventory & Sales Intelligence Dashboard
+# E-Commerce Analysis
 
 ## Project Overview
 
-An interactive data analytics dashboard for e-commerce sales intelligence, built with Python, SQLite3, and Google Colab. This project demonstrates advanced SQL query capabilities, batch data processing, and professional data visualization techniques.
+An e-commerce data analysis project built with Python and SQLite3. This project demonstrates advanced SQL query capabilities, batch data processing, and data manipulation techniques.
 
 ## Features
 
@@ -22,29 +22,12 @@ An interactive data analytics dashboard for e-commerce sales intelligence, built
 - **Subqueries & CTEs**: WITH clauses for query optimization
 - **LEFT JOINs**: Handling optional relationships
 
-### Interactive Visualizations
-
-1. **Regional Sales Heatmap** - Revenue by region × product category
-2. **Daily Revenue Trends** - Time series with moving average
-3. **Customer Lifetime Value** - Top 20 customers ranked by CLV
-4. **Category Performance** - Revenue distribution pie chart
-5. **Product Analysis** - Scatter plot of sales vs ratings
-
-### Interactive Features
-
-- Multi-select region and category filters
-- Dynamic dashboard refresh
-- Real-time data aggregation
-- Hover tooltips with detailed information
-
 ## Technology Stack
 
 - **Database**: SQLite3
 - **Language**: Python 3.10
 - **Data Processing**: Pandas, NumPy
 - **Data Generation**: Faker
-- **Visualization**: Plotly, Matplotlib, Seaborn
-- **Interactive UI**: ipywidgets
 - **Environment**: Google Colab / Jupyter Notebook
 
 ## Installation
@@ -53,10 +36,10 @@ An interactive data analytics dashboard for e-commerce sales intelligence, built
 
 ```bash
 # Create conda environment
-conda create -n ecommerce-db python=3.10 -y
+conda create -n ecommerce-analysis python=3.10 -y
 
 # Activate environment
-conda activate ecommerce-db
+conda activate ecommerce-analysis
 
 # Install dependencies
 pip install -r requirements.txt
@@ -72,25 +55,24 @@ pip install -r requirements.txt
 
 ### Running in Google Colab
 
-1. Upload `ecommerce_dashboard.ipynb` to Google Colab
+1. Upload `database_manipulation.ipynb` to Google Colab
 2. Run all cells in order (Runtime → Run all)
-3. Interact with widgets to filter data dynamically
 
 ### Running Locally
 
 ```bash
 # Activate environment
-conda activate ecommerce-db
+conda activate ecommerce-analysis
 
 # Launch Jupyter
-jupyter notebook ecommerce_dashboard.ipynb
+jupyter notebook database_manipulation.ipynb
 ```
 
 ## Project Structure
 
 ```txt
-ecommerce-dashboard/
-├── ecommerce_dashboard.ipynb     # Main notebook
+ecommerce-analysis/
+├── database_manipulation.ipynb   # Main notebook
 ├── requirements.txt              # Python dependencies
 ├── README.md                     # This file
 └── ecommerce.db                  # SQLite database (generated on run)
